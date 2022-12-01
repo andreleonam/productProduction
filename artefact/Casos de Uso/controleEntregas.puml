@@ -1,9 +1,9 @@
 @startuml
-
 left to right direction
 
-actor Loja
-actor Fábrica
+actor Loja #line.bold;line:blue
+actor Fábrica #line.bold;line:red
+
 rectangle "Sistema de Controle de Entregas" {
   usecase "Cadastrar Cliente" as cadCli
   usecase "Validar Cliente" as valCli
@@ -13,7 +13,7 @@ rectangle "Sistema de Controle de Entregas" {
 
   usecase "Entregar Pedido" as entPed
 
-  usecase "Registrar Movimento no Estoque" as regMovEst
+  usecase "Registrar\nMovimento no Estoque" as regMovEst
 
   usecase cadPed as "Cadastrar Pedido
                     --
@@ -22,9 +22,9 @@ rectangle "Sistema de Controle de Entregas" {
 
   usecase "Fabricar Produto" as fabProd
   
-  usecase "Emitir Relatorio Produtos à Fabricar" as relProd
-  usecase "Emitir Relatório de Estoque" as relEst
-  usecase "Emitir Relatório de Pedidos a Entregar" as relPed
+  usecase "Emitir Relatorio\nProdutos a Fabricar" as relProd
+  usecase "Emitir Relatório\nde Estoque" as relEst
+  usecase "Emitir Relatório\nde Pedidos a Entregar" as relPed
 }
 
 Fábrica -up--> fabProd
@@ -37,10 +37,11 @@ Loja --> relProd
 Loja --> relEst
 Loja --> relPed
 
-regMovEst .> fabProd: include
-fabProd -up.> cadPed: extends (Se estoque negativo)
-entPed -right.> cadPed: extends (Se estoque positivo)
-valCli -up.> cadCli: include
-valProd -up.> cadProd: include
-regMovEst -up.> entPed: include
+regMovEst    .> fabProd : include
+fabProd   -up.> cadPed  : extends\n(Se estoque negativo)
+entPed -right.> cadPed  : extends\n(Se estoque positivo)
+
+valCli    -up.> cadCli  : include
+valProd   -up.> cadProd : include
+regMovEst -up.> entPed  : include
 @enduml
