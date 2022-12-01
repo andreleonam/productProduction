@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1be50-2f87-4e12-b1ff-232178854632" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/artefact/cadastroClientes.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artefact/systemAcces.puml" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/controleEntregas.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefact/cadastroClientes.puml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669836454424</updated>
       <workItem from="1669836454952" duration="1791000" />
-      <workItem from="1669857273872" duration="6082000" />
+      <workItem from="1669857273872" duration="6188000" />
     </task>
     <servers />
   </component>
