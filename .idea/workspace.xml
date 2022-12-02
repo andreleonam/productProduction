@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1be50-2f87-4e12-b1ff-232178854632" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/artefact/Diagrama Casos de Uso/controleEntregas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefact/Diagrama Casos de Uso/controleEntregas.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artefact/controleEntregas.png" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/Casos de Uso/controleEntregas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artefact/controleEntregas.puml" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/Casos de Uso/controleEntregas.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefact/Casos de Uso/controleEntregas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefact/Casos de Uso/controleEntregas.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefact/Casos de Uso/controleEntregasDocumentacao.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/Diagrama Casos de Uso/controleEntregasDocumentacao.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="UML Use Case" />
         <option value="HTML File" />
+        <option value="UML Use Case" />
+        <option value="UML Class" />
       </list>
     </option>
   </component>
@@ -49,22 +54,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Use Case&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ws-intellij/productProduction/artefact&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "DefaultPlantUmlFileTemplate": "UML Class",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/ws-intellij/productProduction/artefact/Diagrama Casos de Uso",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ws-intellij\productProduction\artefact\Casos de Uso" />
@@ -81,6 +86,10 @@
       <workItem from="1669836454952" duration="1791000" />
       <workItem from="1669857273872" duration="12019000" />
       <workItem from="1669871478472" duration="98000" />
+      <workItem from="1669916517059" duration="92000" />
+      <workItem from="1669923785386" duration="5835000" />
+      <workItem from="1669939910754" duration="1555000" />
+      <workItem from="1669981627859" duration="11869000" />
     </task>
     <servers />
   </component>
@@ -97,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

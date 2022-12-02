@@ -1,0 +1,43 @@
+@startuml
+    left to right direction
+
+    actor Loja #line.bold;line:blue
+    actor Fábrica #line.bold;line:blue
+
+    rectangle "Sistema de Controle de Produção e Entrega de Mercadoria" #text:red{
+        usecase "Cadastrar Cliente" as cadCli
+        usecase "Cadastrar Endereço\ndo Cliente" as cadEnds
+        usecase "Selecionar Endereço\nde Entrega" as selEnd
+        usecase "Cadastrar Produtos" as cadProd
+        usecase "Entregar Pedido" as entPed
+        usecase "Registrar\nMovimento no Estoque" as regMovEst
+        usecase cadPed as "Cadastrar Pedido
+                          --
+                          Estoque Positivo
+                          Estoque Negativo"
+        usecase "Fabricar Produto" as fabProd
+        usecase "Emitir Relatorio\nProdutos a Fabricar" as relProd
+        usecase "Emitir Relatório\nde Estoque" as relEst
+        usecase "Emitir Relatório\nde Pedidos a Entregar" as relPed
+        usecase "Categoria do Produto" as catProd
+    }
+
+    Fábrica -up--> fabProd
+
+    Loja --> cadCli
+    Loja --> cadPed
+    Loja --> entPed
+    Loja --> relProd
+    Loja --> relEst
+    Loja --> relPed
+    Loja --> cadProd
+
+    entPed -right.> cadPed  : extends\n(Se estoque positivo)
+    fabProd   -up.> cadPed  : extends\n(Se estoque negativo)
+    selEnd    -up.> cadPed  : include
+    regMovEst    .> fabProd : include
+    catProd   -up.> cadProd : include
+    cadEnds   -up.> cadCli  : include
+    cadEnds      .> selEnd  : extends
+    regMovEst -up.> entPed  : include
+@enduml

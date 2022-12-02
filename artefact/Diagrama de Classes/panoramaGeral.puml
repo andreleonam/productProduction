@@ -1,0 +1,114 @@
+@startuml
+    abstract Cliente{
+        -<<oid>>codigo: Integer
+        -nome: String
+        -enderecos[ ]: Endereco
+    }
+    class ClientePessoaFisica{
+        -cpf: String
+    }
+    class ClientePessoaJuridica{
+        -cnpj: String
+    }
+
+    Cliente <|-u- ClientePessoaFisica
+    Cliente <|-u- ClientePessoaJuridica
+
+    enum TipoEndereco{
+        CASA: Integer
+        TRABALHO: Integer
+        OBRA: Integer
+        OUTROS: Integer
+    }
+
+    class Endereco {
+        -<<oid>>codigo: Integer
+        -tipo: TipoEndereco
+        -logradouro: String
+        -nome: String
+        -numero: Integer
+        -bairro: String
+        -cep: String
+        -complemento: String
+    }
+
+    enum TipoEmail{
+        CASA: Integer
+        TRABALHO: Integer
+        OUTROS: Integer
+    }
+
+    class Email {
+        -<<oid>>codigo: Integer
+        -tipo: TipoEmail
+        -email: String
+    }
+
+    enum TipoTelefone {
+        CASA: Integer
+        TRABALHO: Integer
+        CELULAR: Integer
+        OUTROS: Integer
+    }
+
+    class Telefone {
+        -<<oid>>codigo: Integer
+        -tipo: TipoTelefone
+        -ddd: Integer
+        -numero: Integer
+    }
+
+    Cliente "1..* " -- "1..* " Endereco : enderecos
+    Cliente "1..* " -- "1..* " Email : emails
+    Cliente "1..* " -- "1..* " Telefone : telefones
+
+    enum TipoFrete{
+        CIF: Integer
+        FOB: Integer
+    }
+
+    class Pedido{
+        -<<oid>>codigo: Integer
+        -cliente: Cliente
+        -dataPedido: Date
+        -dataEntrega: Date
+        -itensDePedido[ ]: ItemPedido
+        -observacao: String
+        -frete: TipoFrete
+        -numeroNotaFiscal: Integer
+    }
+
+    class ItemPedido{
+        -<<oid>>codigo: Integer
+        -produto: Produto
+        -pedido: Pedido
+        -quantidade: Integer
+    }
+
+    Cliente    "1 " -r- "0..* " Pedido    : pedidos
+    Pedido     "1 " -r- "1..* " ItemPedido : itensDePedido
+    ItemPedido "1..* " -r- "1 " Produto: produtos
+
+    class UnidadeProduto{
+        -<<oid>>codigo: Integer
+        -nome: String
+    }
+
+    class Produto{
+        -<<oid>>codigo: Integer
+        -nome: String
+        -unidade: UnidadeProduto
+        -categoria: CategoriaProduto
+        -saldo: Integer
+    }
+
+    class CategoriaProduto{
+        -<<oid>>codigo: Integer
+        -nome: String
+    }
+
+    Produto "1..* " -- "1 " CategoriaProduto : categorizado
+    Produto "1..* " -- "1 " UnidadeProduto : descricionado
+
+
+@enduml
