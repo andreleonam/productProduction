@@ -83,8 +83,8 @@
         -codProduto: Integer
         -codPedido: Integer
         -codEntrega: Integer
-        -quantidadePedida: Double
-        -quantidadeEntregue: Double
+        -saldoEstoque: Double
+        -totalProdutosPedidosA_Entregar: Double
     }
 
     Cliente    "1 " -r- "0..* " Pedido    : "       pedidos       "

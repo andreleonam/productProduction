@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1be50-2f87-4e12-b1ff-232178854632" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enums/TipoEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enums/TipoEndereco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enums/TipoFrete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enums/TipoTelefone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/cliente/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/cliente/ClientePessoaFisica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/cliente/ClientePessoaJuridica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/cliente/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/cliente/Endereco.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/cliente/Telefone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/produto/CategoriaProduto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/produto/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/model/produto/UnidadeProduto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.png" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.puml" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +36,8 @@
         <option value="HTML File" />
         <option value="UML Use Case" />
         <option value="UML Class" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,6 +60,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2IHRJU1RVHLBhRNtOfFKyP7n07U" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,13 +77,14 @@
     "DefaultPlantUmlFileTemplate": "UML Class",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/ws-intellij/productProduction/artefact/Diagrama de Classes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,7 +108,7 @@
       <workItem from="1669923785386" duration="5835000" />
       <workItem from="1669939910754" duration="1555000" />
       <workItem from="1669981627859" duration="12095000" />
-      <workItem from="1670115649318" duration="4729000" />
+      <workItem from="1670115649318" duration="11492000" />
     </task>
     <servers />
   </component>
