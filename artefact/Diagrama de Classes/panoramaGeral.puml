@@ -69,25 +69,27 @@
 
     class Pedido{
         -<<oid>>codigo: Integer
-        -cliente: Cliente
+        -codigoCliente: Integer
+        -codEnderecoEntrega: Integer
+        -codigoItensDePedido: Integer
         -dataPedido: Date
-        -dataEntrega: Date
-        -itensDePedido[ ]: ItemPedido
+        -dataPrevisaoEntrega: Date
         -observacao: String
         -frete: TipoFrete
-        -numeroNotaFiscal: Integer
     }
 
     class ItemPedido{
         -<<oid>>codigo: Integer
-        -produto: Produto
-        -pedido: Pedido
-        -quantidade: Integer
+        -codProduto: Integer
+        -codPedido: Integer
+        -codEntrega: Integer
+        -quantidadePedida: Double
+        -quantidadeEntregue: Double
     }
 
-    Cliente    "1 " -r- "0..* " Pedido    : pedidos
-    Pedido     "1 " -r- "1..* " ItemPedido : itensDePedido
-    ItemPedido "1..* " -r- "1 " Produto: produtos
+    Cliente    "1 " -r- "0..* " Pedido    : "       pedidos       "
+    Pedido     "1 " -r- "1..* " ItemPedido : "       itensDePedido       "
+    ItemPedido "1..* " -r- "1 " Produto: "       produtosSolicitados        "
 
     class UnidadeProduto{
         -<<oid>>codigo: Integer
@@ -99,7 +101,8 @@
         -nome: String
         -unidade: UnidadeProduto
         -categoria: CategoriaProduto
-        -saldo: Integer
+        -estoqueFabricado: Double
+        -estoqueVendido: Double
     }
 
     class CategoriaProduto{
@@ -107,8 +110,34 @@
         -nome: String
     }
 
-    Produto "1..* " -- "1 " CategoriaProduto : categorizado
-    Produto "1..* " -- "1 " UnidadeProduto : descricionado
+    Produto "1..* " -- "1 " CategoriaProduto : "categorizado"
+    Produto "1..* " -- "1 " UnidadeProduto : "descricionado"
 
+    class Entrega{
+        -<<oid>>codigo: Integer
+        -dataEntrega: Date
+        -codigoPedido: Integer
+        -numeroNotaFiscal: Integer
+    }
+
+    Entrega "1 " -- "1..* " ItemPedido : "  itensDeEntrega       "
+
+
+
+    class Fabricacao{
+        -<<oid>>codigo: Integer
+        -dataFabricacao: Date
+        -itensFabricados[ ]: ItemFabricacao
+        -observacao: String
+    }
+
+    class ItemFabricacao{
+        -<<oid>>codigo: Integer
+        -codProduto: Integer
+        -quantidadeFabricada: Double
+    }
+
+    Produto "1 "-right-- "1..* " ItemFabricacao : "       produtosFabricados       "
+    Fabricacao "1 " -left-- "1..* " ItemFabricacao : "       itensFabricados       "
 
 @enduml
