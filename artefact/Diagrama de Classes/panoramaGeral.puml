@@ -58,9 +58,9 @@
         -numero: Integer
     }
 
-    Cliente "1..* " -- "1..* " Endereco : enderecos
-    Cliente "1..* " -- "1..* " Email : emails
-    Cliente "1..* " -- "1..* " Telefone : telefones
+    Cliente "1    " -- "1..* " Endereco : enderecos
+    Cliente "1 " -- "1..* " Email : emails
+    Cliente "1 " -- "1..*    " Telefone : telefones
 
     enum TipoFrete{
         CIF: Integer

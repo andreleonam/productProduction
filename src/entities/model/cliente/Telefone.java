@@ -7,15 +7,17 @@ public class Telefone {
     private TipoTelefone tipoTelefone;
     private Integer ddd;
     private Integer numero;
+    private Integer codigoCliente;
 
     public Telefone() {
     }
 
-    public Telefone(Integer codigo, TipoTelefone tipoTelefone, Integer ddd, Integer numero) {
+    public Telefone(Integer codigo, TipoTelefone tipoTelefone, Integer ddd, Integer numero, Integer codigoCliente) {
         this.codigo = codigo;
         this.tipoTelefone = tipoTelefone;
         this.ddd = ddd;
         this.numero = numero;
+        this.codigoCliente = codigoCliente;
     }
 
     public Integer getCodigo() {
@@ -50,13 +52,22 @@ public class Telefone {
         this.numero = numero;
     }
 
+    public Integer getCodigoCliente() {
+        return codigoCliente;
+    }
+
+    public void setCodigoCliente(Integer codigoCliente) {
+        this.codigoCliente = codigoCliente;
+    }
+
     @Override
     public String toString() {
-        return "entities.model.cliente.Telefone{" +
+        return "Telefone{" +
                 "codigo=" + codigo +
                 ", tipoTelefone=" + tipoTelefone +
                 ", ddd=" + ddd +
                 ", numero=" + numero +
+                ", codigoCliente=" + codigoCliente +
                 '}';
     }
 }

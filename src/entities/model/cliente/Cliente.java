@@ -32,6 +32,18 @@ abstract class Cliente {
         this.nome = nome.toUpperCase();
     }
 
+    public List<Endereco> getEnderecos() {
+        return enderecos;
+    }
+
+    public List<Telefone> getTelefones() {
+        return telefones;
+    }
+
+    public List<Email> getEmails() {
+        return emails;
+    }
+
     @Override
     public String toString() {
         return "Cliente{" +

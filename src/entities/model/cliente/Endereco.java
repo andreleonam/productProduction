@@ -11,8 +11,9 @@ public class Endereco {
     private String bairro;
     private String cep;
     private String complemento;
+    private Integer codigoCliente;
 
-    public Endereco(Integer codigo, TipoEndereco tipoEndereco, String logradouro, String nomeRua, Integer numero, String bairro, String cep, String complemento) {
+    public Endereco(Integer codigo, TipoEndereco tipoEndereco, String logradouro, String nomeRua, Integer numero, String bairro, String cep, String complemento, Integer codigoCliente) {
         this.codigo = codigo;
         this.tipoEndereco = tipoEndereco;
         this.logradouro = logradouro.toUpperCase();
@@ -21,6 +22,7 @@ public class Endereco {
         this.bairro = bairro.toUpperCase();
         this.cep = cep.toUpperCase();
         this.complemento = complemento.toUpperCase();
+        this.codigoCliente = codigoCliente;
     }
 
     public Integer getCodigo() {
@@ -87,9 +89,17 @@ public class Endereco {
         this.complemento = complemento.toUpperCase();
     }
 
+    public Integer getCodigoCliente() {
+        return codigoCliente;
+    }
+
+    public void setCodigoCliente(Integer codigoCliente) {
+        this.codigoCliente = codigoCliente;
+    }
+
     @Override
     public String toString() {
-        return "entities.model.cliente.Endereco{" +
+        return "Endereco{" +
                 "codigo=" + codigo +
                 ", tipoEndereco=" + tipoEndereco +
                 ", logradouro='" + logradouro + '\'' +
@@ -98,6 +108,7 @@ public class Endereco {
                 ", bairro='" + bairro + '\'' +
                 ", cep='" + cep + '\'' +
                 ", complemento='" + complemento + '\'' +
+                ", codigoCliente=" + codigoCliente +
                 '}';
     }
 }
