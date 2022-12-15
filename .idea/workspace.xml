@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afe1be50-2f87-4e12-b1ff-232178854632" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/ProgramTesteDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/DbException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.puml" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/productProduction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/productProduction.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/ProgramClienteTeste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/model/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/model/cliente/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/model/cliente/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/model/cliente/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/model/cliente/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/model/cliente/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/model/cliente/Telefone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/model/cliente/Telefone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefact/Diagrama Casos de Uso/controleEntregas.png" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/Diagrama Casos de Uso/controleEntregas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.png" beforeDir="false" afterPath="$PROJECT_DIR$/artefact/Diagrama de Classes/panoramaGeral.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/java-libs/jdbc-connectors/mysql-connector-java-8.0.30.jar",
+    "last_opened_file_path": "D:/ws-intellij/productProduction/artefact/Diagrama de Classes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,6 +103,11 @@
       <workItem from="1670187917744" duration="3181000" />
       <workItem from="1670191768879" duration="696000" />
       <workItem from="1670192724008" duration="1658000" />
+      <workItem from="1670249136756" duration="30000" />
+      <workItem from="1670251795520" duration="112000" />
+      <workItem from="1670251921375" duration="95000" />
+      <workItem from="1670896832987" duration="3000" />
+      <workItem from="1670950647871" duration="34000" />
     </task>
     <servers />
   </component>
