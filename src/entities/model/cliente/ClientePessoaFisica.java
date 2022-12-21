@@ -1,11 +1,27 @@
 package entities.model.cliente;
 
+import entities.enums.TipoCliente;
+
 public class ClientePessoaFisica extends Cliente{
+    private Integer idClientePf;
     private String cpf;
 
-    public ClientePessoaFisica(Integer codigo, String nome, String cpf) {
-        super(codigo, nome);
+    public ClientePessoaFisica() {
+        super();
+    }
+
+    public ClientePessoaFisica(Integer idCliente, String nome, String email, TipoCliente tipoCliente, Integer idClientePf, String cpf) {
+        super(idCliente, nome, email, tipoCliente);
+        this.idClientePf = idClientePf;
         this.cpf = cpf;
+    }
+
+    public Integer getIdClientePf() {
+        return idClientePf;
+    }
+
+    public void setIdClientePf(Integer idClientePf) {
+        this.idClientePf = idClientePf;
     }
 
     public String getCpf() {
@@ -19,7 +35,8 @@ public class ClientePessoaFisica extends Cliente{
     @Override
     public String toString() {
         return "ClientePessoaFisica{" +
-                "cpf='" + cpf + '\'' +
+                "idClientePf=" + idClientePf +
+                ", cpf='" + cpf + '\'' +
                 "} " + super.toString();
     }
 }

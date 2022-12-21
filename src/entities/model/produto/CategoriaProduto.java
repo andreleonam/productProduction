@@ -1,50 +1,38 @@
 package entities.model.produto;
 
-import java.util.Objects;
-import java.util.PrimitiveIterator;
-
 public class CategoriaProduto {
-    private Integer codigo;
-    private String nomeCategoriaProduto;
+    private Integer idCategoriaProduto;
+    private String descricao;
 
-    public CategoriaProduto(Integer codigo, String nomeCategoriaProduto) {
-        this.codigo = codigo;
-        this.nomeCategoriaProduto = nomeCategoriaProduto.toUpperCase();
+    public CategoriaProduto() {
     }
 
-    public Integer getCodigo() {
-        return codigo;
+    public CategoriaProduto(Integer idCategoriaProduto, String descricao) {
+        this.idCategoriaProduto = idCategoriaProduto;
+        this.descricao = descricao;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public Integer getIdCategoriaProduto() {
+        return idCategoriaProduto;
     }
 
-    public String getNomeCategoriaProduto() {
-        return nomeCategoriaProduto;
+    public void setIdCategoriaProduto(Integer idCategoriaProduto) {
+        this.idCategoriaProduto = idCategoriaProduto;
     }
 
-    public void setNomeCategoriaProduto(String nomeCategoriaProduto) {
-        this.nomeCategoriaProduto = nomeCategoriaProduto.toUpperCase();
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     @Override
     public String toString() {
         return "CategoriaProduto{" +
-                "codigo=" + codigo +
-                ", nomeCategoriaProduto='" + nomeCategoriaProduto + '\'' +
+                "idCategoriaProduto=" + idCategoriaProduto +
+                ", descricao='" + descricao + '\'' +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof CategoriaProduto that)) return false;
-        return getCodigo().equals(that.getCodigo());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getCodigo());
     }
 }

@@ -3,47 +3,49 @@ package entities.model.produto;
 import java.util.Objects;
 
 public class UnidadeProduto {
-    private Integer codigo;
-    private String nomeUnidadeProduto;
+    private Integer idUnidadeProduto;
+    private String sigla;
+    private String medida;
 
-    public UnidadeProduto(Integer codigo, String nomeUnidadeProduto) {
-        this.codigo = codigo;
-        this.nomeUnidadeProduto = nomeUnidadeProduto.toUpperCase();
+    public UnidadeProduto() {
     }
 
-    public Integer getCodigo() {
-        return codigo;
+    public UnidadeProduto(Integer idUnidadeProduto, String sigla, String medida) {
+        this.idUnidadeProduto = idUnidadeProduto;
+        this.sigla = sigla;
+        this.medida = medida;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public Integer getIdUnidadeProduto() {
+        return idUnidadeProduto;
     }
 
-    public String getNomeUnidadeProduto() {
-        return nomeUnidadeProduto;
+    public void setIdUnidadeProduto(Integer idUnidadeProduto) {
+        this.idUnidadeProduto = idUnidadeProduto;
     }
 
-    public void setNomeUnidadeProduto(String nomeUnidadeProduto) {
-        this.nomeUnidadeProduto = nomeUnidadeProduto.toUpperCase();
+    public String getSigla() {
+        return sigla;
+    }
+
+    public void setSigla(String sigla) {
+        this.sigla = sigla;
+    }
+
+    public String getMedida() {
+        return medida;
+    }
+
+    public void setMedida(String medida) {
+        this.medida = medida;
     }
 
     @Override
     public String toString() {
         return "UnidadeProduto{" +
-                "codigo=" + codigo +
-                ", nomeUnidadeProduto='" + nomeUnidadeProduto + '\'' +
+                "idUnidadeProduto=" + idUnidadeProduto +
+                ", sigla='" + sigla + '\'' +
+                ", medida='" + medida + '\'' +
                 '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof UnidadeProduto that)) return false;
-        return getCodigo().equals(that.getCodigo()) && getNomeUnidadeProduto().equals(that.getNomeUnidadeProduto());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getCodigo(), getNomeUnidadeProduto());
     }
 }

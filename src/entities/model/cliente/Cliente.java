@@ -1,27 +1,34 @@
 package entities.model.cliente;
 
+import entities.enums.TipoCliente;
+
+import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 abstract class Cliente {
-    private Integer codigo;
+    private Integer idCliente;
     private String nome;
+    private String email;
+    private TipoCliente tipoCliente;
 
-    private List<Endereco> enderecos = new ArrayList<>();
-    private List<Telefone> telefones = new ArrayList<>();
-    private List<Email> emails = new ArrayList<>();
-
-    public Cliente(Integer codigo, String nome) {
-        this.codigo = codigo;
-        this.nome = nome.toUpperCase();
+    public Cliente(){
     }
 
-    public Integer getCodigo() {
-        return codigo;
+    public Cliente(Integer idCliente, String nome, String email, TipoCliente tipoCliente) {
+        this.idCliente = idCliente;
+        this.nome = nome;
+        this.email = email;
+        this.tipoCliente = tipoCliente;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public Integer getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(Integer idCliente) {
+        this.idCliente = idCliente;
     }
 
     public String getNome() {
@@ -29,29 +36,32 @@ abstract class Cliente {
     }
 
     public void setNome(String nome) {
-        this.nome = nome.toUpperCase();
+        this.nome = nome;
     }
 
-    public List<Endereco> getEnderecos() {
-        return enderecos;
+    public String getEmail() {
+        return email;
     }
 
-    public List<Telefone> getTelefones() {
-        return telefones;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public List<Email> getEmails() {
-        return emails;
+    public TipoCliente getTipoCliente() {
+        return tipoCliente;
+    }
+
+    public void setTipoCliente(TipoCliente tipoCliente) {
+        this.tipoCliente = tipoCliente;
     }
 
     @Override
     public String toString() {
         return "Cliente{" +
-                "codigo=" + codigo +
+                "idCliente=" + idCliente +
                 ", nome='" + nome + '\'' +
-                ", enderecos=" + enderecos +
-                ", telefones=" + telefones +
-                ", emails=" + emails +
+                ", email='" + email + '\'' +
+                ", tipoCliente=" + tipoCliente +
                 '}';
     }
 }

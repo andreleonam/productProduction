@@ -3,29 +3,29 @@ package entities.model.cliente;
 import entities.enums.TipoTelefone;
 
 public class Telefone {
-    private Integer codigo;
+    private Integer idTelefone;
     private TipoTelefone tipoTelefone;
     private Integer ddd;
     private Integer numero;
-    private Integer codigoCliente;
+    private Integer idCliente;
 
     public Telefone() {
     }
 
-    public Telefone(Integer codigo, TipoTelefone tipoTelefone, Integer ddd, Integer numero, Integer codigoCliente) {
-        this.codigo = codigo;
+    public Telefone(Integer idTelefone, TipoTelefone tipoTelefone, Integer ddd, Integer numero, Integer idCliente) {
+        this.idTelefone = idTelefone;
         this.tipoTelefone = tipoTelefone;
         this.ddd = ddd;
         this.numero = numero;
-        this.codigoCliente = codigoCliente;
+        this.idCliente = idCliente;
     }
 
-    public Integer getCodigo() {
-        return codigo;
+    public Integer getIdTelefone() {
+        return idTelefone;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public void setIdTelefone(Integer idTelefone) {
+        this.idTelefone = idTelefone;
     }
 
     public TipoTelefone getTipoTelefone() {
@@ -52,22 +52,22 @@ public class Telefone {
         this.numero = numero;
     }
 
-    public Integer getCodigoCliente() {
-        return codigoCliente;
+    public Integer getIdCliente() {
+        return idCliente;
     }
 
-    public void setCodigoCliente(Integer codigoCliente) {
-        this.codigoCliente = codigoCliente;
+    public void setIdCliente(Integer idCliente) {
+        this.idCliente = idCliente;
     }
 
     @Override
     public String toString() {
         return "Telefone{" +
-                "codigo=" + codigo +
+                "idTelefone=" + idTelefone +
                 ", tipoTelefone=" + tipoTelefone +
                 ", ddd=" + ddd +
                 ", numero=" + numero +
-                ", codigoCliente=" + codigoCliente +
+                ", idCliente=" + idCliente +
                 '}';
     }
 }

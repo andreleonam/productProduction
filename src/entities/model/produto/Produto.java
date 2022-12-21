@@ -1,70 +1,60 @@
 package entities.model.produto;
 
 public class Produto {
-    private Integer codigo;
-    private String nome;
-    private Integer codigoCategoriaProduto;
-    private Integer codigoUnidadeProduto;
-    private Double saldoEstoque;
-    private Double totalProdutosPedidosA_Entregar;
+    private Integer idProduto;
+    private Integer idCategoriaProduto;
+    private Integer idUnidadeProduto;
+    private String descricao;
 
-    public Produto(Integer codigo, String nome, Integer codigoCategoriaProduto, Integer codigoUnidadeProduto) {
-        this.codigo = codigo;
-        this.nome = nome;
-        this.codigoCategoriaProduto = codigoCategoriaProduto;
-        this.codigoUnidadeProduto = codigoUnidadeProduto;
+    public Produto() {
     }
 
-    public Integer getCodigo() {
-        return codigo;
+    public Produto(Integer idProduto, Integer idCategoriaProduto, Integer idUnidadeProduto, String descricao) {
+        this.idProduto = idProduto;
+        this.idCategoriaProduto = idCategoriaProduto;
+        this.idUnidadeProduto = idUnidadeProduto;
+        this.descricao = descricao;
     }
 
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
+    public Integer getIdProduto() {
+        return idProduto;
     }
 
-    public String getNome() {
-        return nome;
+    public void setIdProduto(Integer idProduto) {
+        this.idProduto = idProduto;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome.toUpperCase();
+    public Integer getIdCategoriaProduto() {
+        return idCategoriaProduto;
     }
 
-    public Integer getCodigoCategoriaProduto() {
-        return codigoCategoriaProduto;
+    public void setIdCategoriaProduto(Integer idCategoriaProduto) {
+        this.idCategoriaProduto = idCategoriaProduto;
     }
 
-    public void setCodigoCategoriaProduto(Integer codigoCategoriaProduto) {
-        this.codigoCategoriaProduto = codigoCategoriaProduto;
+    public Integer getIdUnidadeProduto() {
+        return idUnidadeProduto;
     }
 
-    public Integer getCodigoUnidadeProduto() {
-        return codigoUnidadeProduto;
+    public void setIdUnidadeProduto(Integer idUnidadeProduto) {
+        this.idUnidadeProduto = idUnidadeProduto;
     }
 
-    public void setCodigoUnidadeProduto(Integer codigoUnidadeProduto) {
-        this.codigoUnidadeProduto = codigoUnidadeProduto;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public Double getSaldoEstoque() {
-        return saldoEstoque;
-    }
-
-
-    public Double getTotalProdutosPedidosA_Entregar() {
-        return totalProdutosPedidosA_Entregar;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     @Override
     public String toString() {
-        return "Produto{" +
-                "codigo=" + codigo +
-                ", nome='" + nome + '\'' +
-                ", codigoCategoriaProduto=" + codigoCategoriaProduto +
-                ", codigoUnidadeProduto=" + codigoUnidadeProduto +
-                ", saldoEstoque=" + saldoEstoque +
-                ", totalProdutosPedidosA_Entregar=" + totalProdutosPedidosA_Entregar +
+        return "CategoriaProduto{" +
+                "idProduto=" + idProduto +
+                ", idCategoriaProduto=" + idCategoriaProduto +
+                ", idUnidadeProduto=" + idUnidadeProduto +
+                ", descricao='" + descricao + '\'' +
                 '}';
     }
 }
